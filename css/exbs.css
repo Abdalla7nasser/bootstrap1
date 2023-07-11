@@ -1,0 +1,460 @@
+:root{
+    --min-color: #748182;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+:focus{
+    outline: none;
+}
+@media ( min-width: 1140px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container{
+        max-width: 1140px;
+    }
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .navbar-nav li a{
+    color: #fff;
+}
+.navbar .navbar-nav li{
+    position: relative;
+    font-size: 15px;
+    color: #fff !important;
+}
+.navbar .navbar-nav li .active::after{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #fff;
+    bottom: 7px;
+    left: 7px;
+    
+}
+/* home */
+#Home{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#Home .leyer .conn h1{
+    font-size: 55px;
+    font-weight: bold;
+    
+}
+
+#Home .leyer .conn h2{
+    font-size: 45px;
+    font-weight: 300;
+}
+#Home .leyer .conn h2::after{
+    content: " |";
+    font-size: 55px;
+    font-weight: 400;
+    animation: jop 5s linear 1s infinite alternate ;
+}
+@keyframes jop {
+    0%   {
+        content: " |";
+    }
+    5%   {
+        content: " Dev|";
+    }
+    10%   {
+        content: " Devel|";
+    }
+    15%   {
+        content: " Develop|";
+    }
+    20%   {
+        content: " Developer|";
+    }
+    25%   {
+        content: " |";
+    }
+    30%   {
+        content: " Des|";
+    }
+    35%   {
+        content: " Design|";
+    }
+    40%   {
+        content: "Designer|";
+    }
+    45%   {
+        content: " |";
+    }
+    50%   {
+        content: " lar|";
+    }
+    55%   {
+        content: " larry|";
+    }
+    60%   {
+        content: " larry |";
+    }
+    70%   {
+        content: " larry Da|";
+    }
+    75%   {
+        content: " larry Dani|";
+    }
+    80%   {
+        content: " larry Danie|";
+    }
+    85%   {
+        content: " larry Daniel|";
+    }
+    90%   {
+        content: " larry Daniels|";
+    }
+    100%   {
+        content: " larry Daniels |";
+    }
+    
+}
+
+#Home .leyer .conn .socl ul li{
+    display: inline;
+    color: #fff !important;
+    padding-left: 5px;
+    font-size: 15px;
+}
+#Home .leyer .conn .socl ul li i{
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(49, 44, 44, 0.425);
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* about */
+#about .container .abou-img img{
+    margin-left: 7rem;
+    width: 100%;
+    height: auto;
+}
+#about .container .abou-img{
+    position: relative;
+}
+#about .container .abou-img::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 80%;
+   background-image: url(../imgs/dots.png);
+   background-repeat: repeat;
+    bottom: -35px;
+    right: 85px;
+    z-index: -1;
+}
+ #about .container .abou-text .kkok p span{
+    color: #777;
+    font-weight: 900;
+} 
+#about .container .abou-text .prog .progress{
+    margin-bottom: 30px;
+   
+}
+#about .container .abou-text .prog .progress .progress-bar{
+    position: relative;
+}
+#about .container .abou-text .prog .progress .progress-bar::before{
+    content: attr(data-progress);
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    top: 0px;
+    right: 10px;
+}
+#about .container .abou-text .botooo:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+/* services */
+#services {
+    margin-top: 50px;
+    
+}
+#services h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+#services h2::after{
+    content: "";
+    position: absolute;
+    width: 17%;
+    height: 80%;
+   background-image: url(../imgs/dots.png);
+   background-repeat: repeat;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+}
+#services .ser .icon{
+    margin: 25px 0;
+}
+#services .ser .icon span{
+    margin-top: 50px;
+    padding: 20px 25px;
+    background-color: #77777741;
+    border-radius: 50%;
+    color: black;
+    transition: 0.3s;
+}
+#services .ser:hover .icon span{
+    background-color: black;
+    color: #fff;
+}
+/* Portfolio. */
+#works{
+    background-color: #77777741;
+     min-height: 100vh;
+    margin-top: 50px;
+}
+
+#works h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+#works h2::after{
+    content: "";
+    position: absolute;
+    width: 17%;
+    height: 80%;
+   background-image: url(../imgs/dots.png);
+   background-repeat: repeat;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+}
+#works .por-ico ul{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#works .nav .nav-item button{
+    color: black;
+    font-weight: 900;
+}
+#works .tab-content .tab-pane .itme {
+    position: relative;
+    overflow: hidden;
+}
+#works .tab-content .tab-pane .itme .itemooop{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 26rem;
+    left: 0;
+    border: 5px solid #ebe5e5;
+    transition: 0.5s;
+}
+#works .tab-content .tab-pane .itme:hover .itemooop{
+ top: 0;
+}
+#works .tab-content .tab-pane .itme .itemooop .copop{
+    text-align: center;
+    padding-top: 8rem;
+}
+#works .tab-content .tab-pane .itme .itemooop .copop span{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+#works .tab-content .tab-pane .itme .itemooop .copop span:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+/* testimonials */
+#clients{
+    margin-top: 6rem;
+}
+#clients h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+#clients h2::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 80%;
+   background-image: url(../imgs/dots.png);
+   background-repeat: repeat;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+}
+
+#clients .carousel-item img{
+    width: 150px ;
+    height: 150px;
+    border-radius: 50%;
+}
+#clients.slide{
+    width: 60%;
+    margin: auto;
+}
+#clients .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+/* cont */
+.cont{
+    padding: 35px 0;
+    margin-top: 60px;
+    background-color: #77777741;
+}
+.cont .conntn{
+    text-align: center;
+    margin-top: 3rem;
+    color: #000;
+   
+}
+.cont .conntn .icon span{
+    font-size: 30px;
+    font-weight: 200;
+    color: #000; 
+}
+/* team */
+#team{
+    margin-top: 6rem;
+}
+#team h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+#team h2::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 80%;
+   background-image: url(../imgs/dots.png);
+   background-repeat: repeat;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+#team .box-tea .image-tea{
+  overflow: hidden; 
+  position: relative;
+
+}
+#team .box-tea .image-tea img{
+    transition: 0.5s;
+}
+#team .box-tea .image-tea:hover img{
+    transform: scale(1.5);
+}
+#team .box-tea .image-tea .scol-ime{
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+     opacity: 0;
+     transition: 0.5s;
+     transform: rotateY( 180deg) scale(0.5, 0.5);
+}
+#team .box-tea:hover .image-tea .scol-ime{
+    opacity: 1;
+    transform: rotateY( -180deg) scale(1, 1);
+}
+#team .box-tea .image-tea .scol-ime ul li {
+    margin-top: 10rem;
+    padding-left: 10px;
+}
+#team .box-tea .image-tea .scol-ime ul li i{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%; 
+    transition: 0.5s ;
+}
+#team .box-tea .image-tea .scol-ime ul li i:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #77777746;
+    cursor: pointer;
+}
+/* Contact Us. */
+#contact{
+    margin-top: 6rem;
+}
+#contact h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+#contact h2::after{
+    content: "";
+    position: absolute;
+    width: 23%;
+    height: 80%;
+   background-image: url(../imgs/dots.png);
+   background-repeat: repeat;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+#contact .conty{
+    padding-top: 70px;
+}
+#contact .conty span{
+    font-size: 25px;
+    background-color: #77777741;
+    padding: 15px 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+#contact .conty span:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#contact .form-box input{
+    width: 45%;
+    background-color: #77777741;
+    padding: 5px 0;
+    border: none;
+}
+#contact textarea{
+    background-color: #77777741;
+    border: none;
+}
+#contact .btn{
+    padding: 5px 15px;
+}
+#contact .btn:hover{
+    background-color: #fff;
+    color: #000;
+}
